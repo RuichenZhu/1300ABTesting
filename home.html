@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>A/B Testing</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+  </head>
+
+  <body>
+    <!-- TODO: put your HTML code here! -->
+    <div id="title">
+		<h1>A/B Testing</h1>
+	</div>
+	<div class="parts" id="body1">
+		
+		<h3>Part 1: Hypotheses</h3>
+		<a href="templates/a.html">Link to Version A.</a><br>
+		<a href="templates/b.html">Link to Version B.</a>
+		<h5>Time to Completion</h5>
+		<ul>
+			<li>Null Hypothesis: the time to completion for version A is equal to that for version B.</li>
+			<li>Alternative Hypothesis: the time to completion for version B is shorter than that for version A, because version B emphasize the checkout button, which indicates the action much more clearly.</li>
+		</ul>
+		<h5>Return Rate</h5>
+		<ul>
+			<li>Null Hypothesis: the return rate for version A is equal to that	for version B.</li>
+			<li>Alternative Hypothesis: the return rate for version B is larger than that for version A, becuase version B does not only emphasize the price, so people are more likely to return to see if they reach $150. </li>
+		</ul>
+	</div>
+	<div class="parts" id="body2">
+		<h3>Part 2: Collecting Data and Applying Scripts</h3>
+		<h5>Collecting Data</h5>
+		<p>After I finished writing the HTML and upload it to Heroku, I collect all data through the studio. There are 13 users who have valid data using version A, and another 13 users using version B. There is also one user who has valid data using both version A and version B. Then I used the filtered log document to calculate time to completion and return rate for each version.</p>
+	</div>
+	<div class="parts" id="body3">
+		<h3>Part 3: Conclusions and Takeaways</h3>
+		<h5>Infographic</h5>
+		<img src="infographics.jpg">	
+		<h5>Takeaways</h5>
+		<ul>
+			<li>Larger sample size will detect the significance of the difference more accurately, right now the sample size is not very large, which is less likely to reject the null hypothesis.</li>
+			<li>It's crucial to focus on the specific metrics we would like to test first, only after which we could get statistic differences using statistic methods.</li>
+			<li>A/B testing is a great way to tell the difference between two interfaces by recording users' behavior and calculate result quantitively.</li>
+			<li>Before calculating the result, it's very important to first clarify the null hypothesis and the alternative hypothesis, because it should based on every lttle difference between interfaces.</li>
+		</ul>
+	</div>
+
+  
+
+  </body>
+</html>
